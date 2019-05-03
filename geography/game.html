@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="highscores.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+	<script  src="jquery.js"></script>
+	<script  src="jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+
+
+<div data-role="page" data-theme="a">
+    <div data-role="header">
+      
+
+      <div data-role="navbar">
+        <ul>
+          <li><a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+          <li><a href="#pagetwo" class="ui-btn ui-icon-grid ui-btn-icon-top">Menu</a></li>
+          <li><a href="quiz.html" class="ui-btn ui-icon-edit ui-btn-icon-top">Quiz</a></li>
+        </ul>
+      </div>
+    </div>
+
+	<div data-role="main" class="ui-content">
+      <div id="game" class="justify-center flex-column">
+        
+          <div class="ui-grid-a" style="height: 200px">
+    <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:170px">
+      <div  id="hud-item">
+            <p id="progressText"  class="hud-prefix">
+              Question
+            </p>
+            <center><div id="progressBar" style="height: 40px;width: 150px;">
+              <div id="progressBarFull" style="height: 30px;"></div>
+            </div></center>
+          </div>
+    </div></div>
+    <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:170px">
+      <div id="hud-item">
+            <p class="hud-prefix">
+              Score
+            </p>
+            
+            <center><h1 class="hud-main-text" style="font-size: 30px;" id="score">
+              0
+            </h1></center>
+          </div>
+    </div></div>
+</div><!-- /grid-a -->
+      
+        
+        
+        <h2 style="font-size: 20px; text-align: center;" id="question">What is the answer to these questions?</h2>
+        <div >
+        <div  class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1">Choice 1</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+</div>
+</body>
+</html>
